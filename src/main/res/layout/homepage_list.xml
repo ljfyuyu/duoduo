@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="100dp"
+      android:background="@color/white"
+      android:descendantFocusability="blocksDescendants"
+      android:orientation="horizontal">
+	
+    <LinearLayout
+		android:id="@+id/id_lleft"
+		android:layout_alignParentLeft="true"
+		android:layout_width="80dp"
+		android:layout_height="100dp"
+		android:layout_marginLeft="6dp"
+		android:layout_marginRight="10dp"
+		android:orientation="vertical">
+        <ImageView
+	        android:id="@+id/cover_path"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_gravity="left"
+	        android:layout_marginTop="10dp"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/logo"/>
+        
+        
+   	</LinearLayout>
+        
+
+    <RelativeLayout
+	        android:id="@+id/id_li"
+	        android:layout_toRightOf="@+id/id_lleft"
+	        android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLines="2"
+                android:layout_gravity="center_vertical"
+                android:text="asdfasdfdfasdfadf"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            
+            
+            <RelativeLayout
+                	android:id="@+id/bottom1"
+                	android:layout_alignParentBottom="true"
+                	android:layout_below="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+                    
+	            <LinearLayout
+	                	android:id="@+id/middle_linear"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="wrap_content"
+	                    android:clickable="false"
+	                    android:focusable="false"
+	                    android:focusableInTouchMode="false"
+	                    android:gravity="left"
+	                    android:orientation="horizontal">
+	                    <ImageView
+	                            android:layout_width="14dp"
+	                            android:layout_height="14dp"
+	                            android:layout_gravity="left|center_vertical"
+	                            android:src="@drawable/icon_square_time"/>
+	
+	                    <TextView
+	                            android:id="@+id/status"
+	                            android:paddingLeft="5dp"
+	                            android:layout_width="80dp"
+	                            android:ellipsize="end"
+	                            android:layout_height="wrap_content"
+	                            android:layout_gravity="center_vertical"
+	                            android:singleLine="true"
+	                            android:text="活动已结束"
+	                            android:textColor="@color/red"
+	                            android:textSize="12sp"/>
+	
+	
+	                    <ImageView
+	                            android:layout_width="14dp"
+	                            android:layout_height="14dp"
+	                            android:src="@drawable/icon_clud_logo"/>
+	
+	                    <TextView
+	                            android:id="@+id/name"
+	                            android:paddingLeft="5dp"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:singleLine="true"
+	                            android:text="高大上协会"
+	                            android:textColor="#b5b5b6"
+	                            android:textSize="12sp"/>
+	
+	                    <TextView
+	                            android:id="@+id/time"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:layout_gravity="center_vertical"
+	                            android:gravity="center"
+	                            android:text="活动进行中"
+	                            android:visibility="gone"
+	                            android:textColor="@color/white"
+	                            android:textSize="12sp"/>
+	            </LinearLayout>
+	            <LinearLayout
+	                android:id="@+id/comment_linear"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:clickable="false"
+	                android:descendantFocusability="blocksDescendants"
+	                android:focusable="false"
+	                android:layout_below="@+id/middle_linear"
+	                android:layout_alignParentBottom="true"
+	                android:focusableInTouchMode="false"
+	                android:layout_marginBottom="10dp"
+	                android:orientation="horizontal">
+	
+	                <ImageView
+	                        android:layout_width="14dp"
+	                        android:layout_height="14dp"
+	                        android:layout_gravity="left|center_vertical"
+	                        android:src="@drawable/icon_square_hh"/>
+	
+	                <TextView
+	                        android:id="@+id/comment_persion"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="match_parent"
+	                        android:layout_gravity="center"
+	                        android:layout_marginLeft="5dp"
+	                        android:gravity="center"
+	                        android:text="admin"
+	                        android:textColor="@color/deep_grap"
+	                        android:textSize="10sp"/>
+	
+	                <TextView
+	                        android:id="@+id/comment_content"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="match_parent"
+	                        android:layout_gravity="center"
+	                        android:gravity="center"
+	                        android:singleLine="true"
+	                        android:layout_marginLeft="@dimen/width_5_80"
+	                        android:textColor="#b5b5b6"
+	                        android:ellipsize="end"
+	                        android:text="活动简介..."
+	                        android:textSize="10sp"/>
+	
+	        	</LinearLayout>
+			</RelativeLayout>
+    </RelativeLayout>
+    
+    
+</RelativeLayout>
+

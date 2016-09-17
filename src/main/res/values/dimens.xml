@@ -1,0 +1,52 @@
+<resources>
+    <!-- Font Size-->
+
+    <dimen name="footer_height">90dp</dimen>
+    <dimen name="footer_padding">10dp</dimen>
+
+    <dimen name="title_word_size">29sp</dimen>
+    <dimen name="medium_word_size">12sp</dimen>
+    <dimen name="main_word_size">20sp</dimen>
+    <dimen name="little_word_size">17sp</dimen>
+    <dimen name="warning_word_size">14sp</dimen>
+    <dimen name="min_word_size">10sp</dimen>
+    <!--common dimen-->
+    <dimen name="button_height">48dp</dimen>
+
+    <dimen name="dimen_margin_circle">4dp</dimen>
+    <dimen name="dimen_margin_circle.negative">-4dp</dimen>
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+    <dimen name="ui_10_dip">10dip</dimen>
+    <dimen name="tag_corner_radius">20.0dip</dimen>
+    <dimen name="tag_horizontal_spacing">8.0dip</dimen>
+    <dimen name="tag_vertical_spacing">6.0dip</dimen>
+    <dimen name="common_margin">12.0dip</dimen>
+    <dimen name="common_margin_10">10.0dip</dimen>
+    <dimen name="dimension_50">50dp</dimen>
+    <dimen name="common_bar_height">@dimen/dimension_50</dimen>
+    <dimen name="margin_nomal">10dp</dimen>
+    <dimen name="margin_middle">15dp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_nomal">@dimen/text_14</dimen>
+    <dimen name="text_big">@dimen/text_17</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="indicator_margin">10dp</dimen>
+    <dimen name="bar_height">35dp</dimen>
+    <dimen name="header_height">50dp</dimen>
+    <dimen name="verticalspit_view_width">0.6dp</dimen>
+    <dimen name="horizontalspit_view_height">0.6dp</dimen>
+
+</resources>

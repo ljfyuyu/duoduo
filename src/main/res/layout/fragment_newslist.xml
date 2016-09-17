@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mulin.ljf.duoduo.view.refresh.RefreshLayout
+    android:id="@+id/refresh_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mulin.ljf.duoduo.view.AutoLoadMoreRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.mulin.ljf.duoduo.view.ThreePointLoadingView
+        android:id="@+id/tpl_view"
+        app:pointColor="?attr/pointColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+</com.mulin.ljf.duoduo.view.refresh.RefreshLayout>
