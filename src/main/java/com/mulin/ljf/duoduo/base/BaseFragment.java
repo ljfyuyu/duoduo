@@ -2,11 +2,13 @@ package com.mulin.ljf.duoduo.base;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 
 import com.mulin.ljf.duoduo.R;
 import com.mulin.ljf.duoduo.utils.RxBus;
@@ -20,12 +22,14 @@ import rx.Observable;
 import rx.functions.Action1;
 
 /**
- * Created by mulin on 16/9/14.
+ * ClassName: BaseFragment<p>
+ * Fuction: Fragment基类<p>
+ * UpdateUser:<p>
+ * UpdateDate:<p>
  */
 
-
-
-public class NewsFragment extends Fragment {
+public abstract class BaseFragment extends Fragment
+        implements View.OnClickListener {
 
     @Bind(R.id.refresh_layout)
     RefreshLayout refreshLayout;
@@ -33,6 +37,7 @@ public class NewsFragment extends Fragment {
     AutoLoadMoreRecyclerView recyclerView;
     @Bind(R.id.tpl_view)
     ThreePointLoadingView pointLoadingView;
+
     View mFragmentRootView;
     /**
      * 监听AppbarLayout偏移量
@@ -75,6 +80,8 @@ public class NewsFragment extends Fragment {
         });
 
     }
+
+
 
     @Override
     public void onDestroy() {

@@ -72,6 +72,9 @@
     <string name="actionbar_right">保存</string>
     <string name="actionbar_title">点爱</string>
     <string name="app_login_title">点爱</string>
+    <string name="tab_shetuan">社团活动</string>
+    <string name="tab_jiangzhuang">讲座信息</string>
+    <string name="tab_bisai">比赛信息</string>
     <string name="login">登录</string>
     <string name="register">快速注册</string>
     <string name="forgetpassword">忘记密码>></string>

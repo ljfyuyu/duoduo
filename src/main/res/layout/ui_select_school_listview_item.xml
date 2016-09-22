@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="15dp"
+    android:orientation="horizontal" >
+	<TextView
+	    android:layout_alignParentLeft="true"
+          android:id="@+id/shop_name"
+          android:padding="5dp"
+          android:layout_centerVertical="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="华侨大学"
+          android:textSize="16sp"
+          android:textColor="#000"
+          android:layout_marginRight="13dp"
+          />
+	
+	<ImageView
+	    android:id="@+id/right"
+	    android:layout_alignParentRight="true"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:clickable="true"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_home_right"/>
+	
+</RelativeLayout>

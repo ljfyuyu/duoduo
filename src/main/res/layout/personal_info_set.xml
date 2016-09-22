@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    
+    <LinearLayout
+        android:id="@+id/avatar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#fff" >
+	    <RelativeLayout
+	      android:id="@+id/header"
+	      android:layout_width="match_parent"
+	      android:layout_height="40dp"
+	      android:background="@color/head_bg"
+	      android:orientation="horizontal">
+	
+	        <ImageView
+	                android:id="@+id/left_ImageView"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:layout_alignParentLeft="true"
+	                android:clickable="true"
+	                android:onClick="onClick"
+	                android:layout_centerVertical="true"
+	                android:scaleType="centerInside"
+	                android:src="@drawable/icon_return"/>
+	
+	        <TextView
+	                android:id="@+id/mainName"
+	                android:layout_toRightOf="@+id/left_ImageView"
+	                android:layout_toLeftOf="@+id/right_text"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_centerInParent="true"
+	                android:layout_centerVertical="true"
+	                android:gravity="left|center_vertical"
+	                android:text="个人信息"
+	                android:textColor="#ffffffff"
+	                android:textSize="15sp"/>
+	
+	        <TextView
+	                android:id="@+id/right_text"
+	                android:layout_alignParentRight="true"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:clickable="true"
+	                android:gravity="right|bottom"
+	                android:onClick="ButtonClicked"
+	                android:layout_centerVertical="true"
+	                android:text="扫码.签到"
+	                android:textSize="13sp"
+	                android:textColor="#fff"
+	                android:layout_marginRight="13dp"
+	                android:visibility="gone"
+	                />
+	
+		</RelativeLayout>
+	
+    
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="@color/hint"
+            android:layout_weight="20"
+            android:paddingLeft="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:maxLength="25"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="14sp" />
+        
+        <View
+            android:layout_height="0.5dp"
+            android:layout_width="match_parent"
+            android:background="#c1c1c1"/>
+        
+        
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="160dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/icon_registered_01"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:onClick="onClick"
+            android:textSize="16sp" />
+        
+	</LinearLayout>
+	
+</ScrollView>
